@@ -1,0 +1,122 @@
+body {
+    font-family: 'Press Start 2P', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('img7.png');
+    background-repeat: repeat;
+    background-size: auto;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.game-container {
+    background-color: rgba(245, 245, 220, 0.9);
+    padding: 25px;
+    border: 4px solid #333;
+    box-shadow: 8px 8px 0px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    width: 100%;
+    max-width: 700px;
+}
+
+h1 {
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+.game-info {
+    font-size: 1.2em;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 140px);
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.card {
+    width: 140px;
+    height: 140px;
+    cursor: pointer;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+/* КЛУЧНАТА ПРОМЕНА Е ТУКА */
+.card.flipped,
+.card.matched {
+    transform: rotateY(180deg);
+}
+
+.card .front-face,
+.card .back-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border: 4px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.card .back-face {
+    background-color: #d2b48c;
+    color: #333;
+    font-size: 3em;
+}
+
+.card .front-face {
+    background-color: #f5f5dc;
+    transform: rotateY(180deg);
+}
+
+.card .front-face img {
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+}
+
+.card.matched {
+    cursor: default; /* Ова го прави "unavailable" за кликање */
+}
+
+.message {
+    margin-top: 20px;
+    font-size: 1em;
+    color: #3a86ff;
+    min-height: 25px;
+    line-height: 1.5;
+}
+
+#resetButton {
+    margin-top: 15px;
+    padding: 15px 30px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1em;
+    color: #fff;
+    background-color: #e76f51;
+    border: 4px solid #333;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+#resetButton:hover {
+    background-color: #f4a261;
+}
+
+#resetButton:active {
+    transform: translateY(4px);
+}
