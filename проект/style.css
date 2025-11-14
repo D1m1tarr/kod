@@ -1,0 +1,235 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    line-height: 1.7;
+    color: #333;
+    background-image: url('images/ohrid-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: #f9f9f9;
+}
+
+.container {
+    padding: 2rem 1rem;
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    font-size: 2.2rem;
+    color: #333;
+}
+
+header {
+    background: #2c3e50;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header h1 {
+    margin: 0;
+    font-weight: 600;
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+    margin-top: 0.5rem;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #1abc9c;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #2c3e50;
+    color: #fff;
+}
+
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/ohrid-bg.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-text h2 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.about-section, .locations-section, .gallery-grid, form, .blog-article {
+     background: rgba(255, 255, 255, 0.95);
+     border-radius: 10px;
+     padding: 2rem;
+     box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    text-align: center;
+    padding: 0;
+    background: none;
+    box-shadow: none;
+}
+
+.about-item h3 {
+    color: #007B8A;
+    margin-bottom: 0.5rem;
+}
+
+.locations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 1.5rem;
+}
+
+.card-content h3 {
+    margin-top: 0;
+    color: #2c3e50;
+}
+
+.btn {
+    display: inline-block;
+    background: #007B8A;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background: #005f6b;
+}
+
+.cta-section {
+    padding: 4rem 1rem;
+    text-align: center;
+    color: #fff;
+    background: rgba(44, 62, 80, 0.85);
+    border-radius: 10px;
+    max-width: 1100px;
+    margin: 2rem auto;
+}
+.cta-section h2{
+    margin-bottom: 1.5rem;
+}
+
+.btn-large {
+    font-size: 1.1rem;
+    padding: 12px 25px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    background: none;
+    box-shadow: none;
+    padding: 0;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+.gallery-item {
+    background: #fff;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.interactions button, .comment-submit {
+    margin: 5px;
+    cursor: pointer;
+}
+
+.comments-section {
+    margin-top: 10px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input[type="text"],
+form input[type="number"],
+form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+form button {
+    background: #333;
+    color: #fff;
+    border: 0;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}   

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="mk">
+<head>
+    <meta charset="UTF-8">
+    <title>Галерија - Охрид</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>City Explorer: Охрид</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Почетна</a></li>
+                <li><a href="gallery.html">Галерија</a></li>
+                <li><a href="blog.html">Блог</a></li>
+                <li><a href="survey.html">Анкета</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="container">
+            <h2 class="section-title">Галерија од Охрид</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/kaneo.jpg" alt="Св. Јован Канео">
+                    <div class="interactions">
+                        <button class="like-btn">Like</button> <span class="likes">0</span>
+                        <button class="dislike-btn">Dislike</button> <span class="dislikes">0</span>
+                    </div>
+                    <div class="comments-section">
+                        <h4>Коментари:</h4>
+                        <ul class="comments-list"></ul>
+                        <input type="text" class="comment-input" placeholder="Напиши коментар...">
+                        <button class="comment-submit">Прати</button>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/tvrdina.jpg" alt="Самуилова тврдина">
+                    <div class="interactions">
+                        <button class="like-btn">Like</button> <span class="likes">0</span>
+                        <button class="dislike-btn">Dislike</button> <span class="dislikes">0</span>
+                    </div>
+                    <div class="comments-section">
+                        <h4>Коментари:</h4>
+                        <ul class="comments-list"></ul>
+                        <input type="text" class="comment-input" placeholder="Напиши коментар...">
+                        <button class="comment-submit">Прати</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 ФЕИТ - Основи на Web Програмирање.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
